@@ -6,7 +6,7 @@
 /*   By: ddang <ddang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 15:16:32 by ddang             #+#    #+#             */
-/*   Updated: 2020/02/22 18:12:45 by ddang            ###   ########.fr       */
+/*   Updated: 2020/03/10 17:04:45 by ddang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,6 @@ static int	count_words(const char *s, char c)
 	int		words;
 
 	words = 1;
-	if (*s != c && *s != '\0')
-	{
-		words++;
-		s++;
-	}
 	while (*s)
 	{
 		while (*s == c)
