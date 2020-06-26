@@ -14,13 +14,12 @@
 
 void	*ft_memalloc(size_t size)
 {
-	size_t	i;
 	char	*s;
 
-	i = 0;
 	if (!(s = (char*)malloc(sizeof(char) * size)))
 		return (NULL);
-	while (i < size)
-		s[i++] = 0;
+	s[size] = '\0';
+	while (size--)
+		s[size] = 0;
 	return (s);
 }
